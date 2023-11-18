@@ -1,0 +1,20 @@
+.about {
+
+
+  p {
+    margin-bottom: 1rem;
+    letter-spacing: 0.07rem;
+
+    &::before {
+      content: '</>';
+
+      color: var(--verdigris);
+      font-weight: 900;
+    }
+  }
+
+  img {
+    width: 400px;
+  }
+
+}

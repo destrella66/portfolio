@@ -1,1 +1,130 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* CSS HEX LIGHT MODE */
+:root {
+  --oxford-blue: #0b132bff;
+  --yinmn-blue: #3a506bff;
+  --space-cadet: #1c2541ff;
+  --verdigris: #5bc0beff;
+  --white: #ffffffff;
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: var(--white);
+
+
+}
+
+.container {
+  background-color: var(--oxford-blue);
+  min-height: 100vh;
+  padding: 7% 5% 3%;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.sp-between {
+  justify-content: space-between;
+}
+
+.sp-evenly {
+  justify-content: space-evenly;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.btn {
+  border-radius: 20px;
+  border: none;
+  background-color: var(--verdigris);
+  color: var(--white);
+  font-weight: 700;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.underlinded {
+  border-bottom: 2px solid var(--yinmn-blue);
+  display: inline-block;
+}
+
+.w-7 {
+  width: 70vw;
+}
+
+.block {
+  display: block;
+}
+
+.mg-auto {
+  margin: 0 auto;
+}
+
+.divisor {
+  border-bottom: 2px solid var(--yinmn-blue);
+  display: inline-block;
+  width: 70vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.upper {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--verdigris);
+  color: var(--white);
+  font-weight: 900;
+  transition: 0.3s;
+
+
+  &:hover {
+    bottom: 30px;
+  }
+
+  &:active {
+    bottom: 15px;
+  }
+
+}
+
+.topic {
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+
+// Second option
+/* CSS HEX */

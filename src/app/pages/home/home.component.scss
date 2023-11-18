@@ -1,0 +1,79 @@
+.home {
+  height: 100vh;
+}
+
+header {
+  background: transparent;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 50px;
+  z-index: 100;
+
+  nav {
+    width: 100%;
+    padding: 0 7%;
+
+    .logo {
+      color: var(--verdigris);
+      transition: 0.3s;
+
+      span {
+        color: var(--white);
+      }
+    }
+
+    ul {
+      li {
+        margin: 0 10px;
+        font-size: 15px;
+      }
+
+      svg {
+        width: 25px;
+        height: 25px;
+        color: var(--white);
+      }
+    }
+  }
+}
+
+main {
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: .3rem;
+
+    .dev-skills {
+      color: var(--verdigris);
+    }
+  }
+
+  p {
+    text-align: justify;
+    max-width: 360px;
+    margin-bottom: .6rem;
+    letter-spacing: 0.07rem;
+  }
+
+
+  img {
+    width: 400px;
+  }
+}
+
+.waves {
+  display: block;
+
+  img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+
+}
