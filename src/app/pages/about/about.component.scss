@@ -1,4 +1,13 @@
 .container {
+  main {
+    flex-direction: column;
+
+    h2 {
+      align-self: flex-start;
+      margin: 30px 0;
+    }
+  }
+
 
   p {
 
