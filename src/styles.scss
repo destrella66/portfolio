@@ -5,8 +5,10 @@
   --oxford-blue: #0b132bff;
   --yinmn-blue: #3a506bff;
   --space-cadet: #1c2541ff;
-  --verdigris: #5bc0beff;
+  --verdigris: #2a8ec7ff;
   --white: #ffffffff;
+  overflow-x: hidden;
+
 
 
 }
@@ -24,10 +26,33 @@
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: var(--oxford-blue);
   min-height: 100vh;
-  padding: 7% 5% 3%;
-  overflow: hidden;
+  width: 100vw;
+  padding: 0 5%;
+
+}
+
+.main {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+
+    margin-bottom: 1rem;
+    letter-spacing: 0.07rem;
+    width: 45vw;
+  }
+}
+
+.toggle {
+  display: none;
 }
 
 .flex {
@@ -50,18 +75,25 @@
   justify-content: center;
 }
 
+.f-col {
+  flex-direction: column;
+}
+
 .btn {
-  border-radius: 20px;
+  border-radius: 25px;
   border: none;
+  outline: none;
   background-color: var(--verdigris);
   color: var(--white);
   font-weight: 700;
-  padding: 10px 40px;
+  height: 2.5rem;
+  width: 9rem;
   cursor: pointer;
   transition: 0.3s;
 
   &:hover {
-    transform: scale(1.1);
+    color: var(--verdigris);
+    background-color: var(--white);
   }
 
   &:active {
@@ -92,10 +124,9 @@
 
 .divisor {
   border-bottom: 2px solid var(--yinmn-blue);
-  display: inline-block;
   width: 70vw;
   display: block;
-  margin: 0 auto;
+  margin: 2.5rem auto;
 }
 
 .upper {
@@ -128,3 +159,33 @@
 
 // Second option
 /* CSS HEX */
+
+// media
+@media (max-width:700px) {
+  .container {
+    flex-wrap: wrap;
+    padding: 0;
+
+    main {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 90%;
+      align-items: center;
+      padding: 5%;
+
+      div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+          width: 90%;
+          text-align: center;
+        }
+      }
+
+    }
+  }
+}

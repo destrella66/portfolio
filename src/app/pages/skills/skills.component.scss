@@ -1,0 +1,64 @@
+.main {
+  flex-direction: column;
+
+  h2 {
+    align-self: flex-start;
+  }
+}
+
+.skill {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 5%;
+
+  .skill-info {
+    width: 100%;
+    padding: 0.5rem 2.5%;
+
+  }
+
+  .percentage {
+    width: 100%;
+    display: block;
+    height: 30px;
+    background: var(--space-cadet);
+    border-radius: 15px;
+
+    .adv,
+    .med,
+    .beg {
+      background: var(--verdigris);
+      display: block;
+      height: 30px;
+      border-radius: 15px;
+    }
+
+
+    .adv {
+      width: 75%;
+    }
+
+    .med {
+      width: 50%;
+    }
+
+    .beg {
+      width: 25%;
+    }
+  }
+
+
+}
+
+// media
+@media (max-width:700px) {
+
+  .skill-info {
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+}
