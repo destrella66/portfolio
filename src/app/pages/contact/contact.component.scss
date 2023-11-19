@@ -1,0 +1,63 @@
+.main {
+  flex-direction: column;
+}
+
+.form-box {
+  width: 100%;
+
+  .form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    gap: 0.5rem 0;
+  }
+
+  input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--verdigris);
+    font-size: 1.2rem;
+  }
+
+  textarea {
+    background: transparent;
+    border: 2px solid var(--verdigris);
+    border-radius: 5px 20px 5px 20px;
+    max-width: 100%;
+    min-height: 8rem;
+    max-height: 16rem;
+    padding: 1rem 0.5rem;
+    font-size: 1.2rem;
+    outline: none;
+
+
+  }
+
+  .btn {
+    align-self: center;
+    margin-top: 0.5rem;
+    min-width: 40%;
+    padding: 10px 40px;
+  }
+}
+
+.thanks-box {
+  text-align: center;
+  gap: 2rem;
+  max-width: 70%;
+
+  i {
+    line-height: 1.4rem;
+  }
+}
+
+// media
+@media (max-width:1200px) {
+  .form-box {
+    width: 100%;
+
+    .form {
+      width: 70%;
+    }
+  }
+}

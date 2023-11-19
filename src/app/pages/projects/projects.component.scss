@@ -17,7 +17,13 @@
     padding: 20px 10px;
     border: 2px solid var(--verdigris);
     border-radius: 5px 20px 5px 20px;
+    transition: 0.3s;
     margin: 15px;
+    box-shadow: 3px 3px 15px 0px #050810;
+
+    &:hover {
+      border-color: var(--white);
+    }
 
     img {
       width: 100%;
@@ -26,9 +32,10 @@
     }
 
     .project-info {
+      text-align: center;
+
       p {
         width: 90%;
-        text-align: center;
         margin: 0.7rem 0;
       }
 
@@ -37,8 +44,7 @@
 
         .btn-check,
         .btn-repo {
-          height: 2rem;
-          width: 7rem;
+          padding: 5px 20px;
           margin: 0 10px;
         }
       }
@@ -48,6 +54,48 @@
 }
 
 // media
+
+
+@media (max-width:1250px) {
+  .projects {
+
+    .project-box {
+      width: 40%;
+
+      .project-info {
+        .btn-box {
+          width: 100%;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width:940px) {
+  .projects {
+
+    justify-content: center;
+
+
+    .project-box {
+      width: 70%;
+
+      .project-info {
+        .btn-box {
+          width: 100%;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+      }
+    }
+
+  }
+}
+
+
 @media (max-width:700px) {
   .projects {
 

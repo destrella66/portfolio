@@ -8,6 +8,7 @@
   --verdigris: #2a8ec7ff;
   --white: #ffffffff;
   overflow-x: hidden;
+  max-width: 1500px;
 
 
 
@@ -21,6 +22,7 @@
   text-decoration: none;
   box-sizing: border-box;
   color: var(--white);
+  outline: none;
 
 
 }
@@ -42,6 +44,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+
+  h2 {
+    align-self: flex-start;
+  }
 
   p {
 
@@ -86,8 +93,6 @@
   background-color: var(--verdigris);
   color: var(--white);
   font-weight: 700;
-  height: 2.5rem;
-  width: 9rem;
   cursor: pointer;
   transition: 0.3s;
 
@@ -140,6 +145,8 @@
   color: var(--white);
   font-weight: 900;
   transition: 0.3s;
+  box-shadow: 2px 2px 15px 0px #050810;
+
 
 
   &:hover {
@@ -187,5 +194,25 @@
       }
 
     }
+  }
+}
+
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
+
+@keyframes floaImg {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 25px;
+  }
+
+  100% {
+    top: 0;
   }
 }

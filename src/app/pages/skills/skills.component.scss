@@ -26,6 +26,14 @@
     height: 30px;
     background: var(--space-cadet);
     border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 0px 2px 15px 0px #050810;
+
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
 
     .adv,
     .med,
@@ -34,6 +42,9 @@
       display: block;
       height: 30px;
       border-radius: 15px;
+
+
+
     }
 
 
