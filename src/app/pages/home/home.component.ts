@@ -16,5 +16,12 @@ export class HomeComponent {
   //     this.devSkills.
 
   // }
+  toggle = document.getElementById('toggle');
+  navBar = document.getElementById('nav-bar');
+  toggleNavBar = () => {
 
+
+    this.toggle?.classList.toggle("active");
+    this.navBar?.classList.toggle("active");
+  }
 }

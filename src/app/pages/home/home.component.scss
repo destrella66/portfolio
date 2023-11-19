@@ -62,7 +62,20 @@ header {
           }
         }
 
+
       }
+
+      // ul.active {
+
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: space-between;
+      //   position: absolute;
+      //   height: 100vh;
+      //   width: 100%;
+      //   overflow: hidden;
+      //   z-index: 100;
+      // }
 
 
       svg {
@@ -142,6 +155,7 @@ main {
 
 
 }
+
 
 // media header nav ((mobile))
 @media (max-width:1250px) {
@@ -233,15 +247,16 @@ main {
 
 @media (max-width:700px) {
   header {
+    justify-content: flex-end;
+    padding: 0 5%;
+
     nav {
       display: none;
     }
 
     .toggle {
       display: block;
-      position: absolute;
-      right: 20px;
-      bottom: 20px;
+      position: relative;
       transition: 0.3s;
       padding: 5px;
       transform: scale(1.4) rotate(90deg);
