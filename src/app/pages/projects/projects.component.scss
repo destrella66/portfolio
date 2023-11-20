@@ -29,6 +29,14 @@
       width: 100%;
       border-radius: 10px;
       margin-bottom: 10px;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 3px 3px 15px 0px #050810;
+
+
+      }
     }
 
     .project-info {

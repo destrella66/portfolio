@@ -1,0 +1,32 @@
+.footer {
+  background-color: var(--oxford-blue);
+  box-shadow: -5px 0 15px 0 black;
+  width: 100vw;
+  min-height: 50px;
+  max-height: 80px;
+  padding: 0.5rem 5%;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+
+  ul {
+    position: relative;
+    height: 30px;
+
+    li {
+      height: 100%;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+
+      svg {
+        height: 100%;
+        margin: 0 1rem;
+
+      }
+    }
+  }
+}
