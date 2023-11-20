@@ -10,6 +10,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { NavbarComponent } from './pages/components/navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     ContactComponent,
     AboutComponent,
     SkillsComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

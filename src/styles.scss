@@ -147,7 +147,13 @@
   transition: 0.3s;
   box-shadow: 2px 2px 15px 0px #050810;
 
+  a {
 
+    img {
+      width: 30px;
+    }
+
+  }
 
   &:hover {
     bottom: 30px;
