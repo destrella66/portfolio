@@ -47,6 +47,12 @@ header {
       animation: move-bg 12s infinite linear;
     }
 
+    .toggle-active {
+      display: none;
+      right: 30px;
+      position: relative;
+    }
+
     ul {
       li {
         margin: 0 10px;
@@ -64,19 +70,6 @@ header {
 
 
       }
-
-      // ul.active {
-
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: space-between;
-      //   position: absolute;
-      //   height: 100vh;
-      //   width: 100%;
-      //   overflow: hidden;
-      //   z-index: 100;
-      // }
-
 
       svg {
         width: 25px;
@@ -159,6 +152,12 @@ main {
 
 // media header nav ((mobile))
 @media (max-width:1250px) {
+
+  .toggle-active {
+    display: none;
+
+  }
+
   .main {
     h1 {
       font-size: 2.2rem;
@@ -180,6 +179,14 @@ main {
 
 
 @media (max-width:990px) {
+
+
+  header {
+    ul.social {
+      display: none;
+    }
+  }
+
   .main {
     .home-box {
       flex-direction: column;
@@ -212,6 +219,11 @@ main {
 }
 
 @media (max-width:650px) {
+  .toggle-active {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
   .main {
     .home-box {
       flex-direction: column;
@@ -238,7 +250,7 @@ main {
 
     div {
       img {
-        width: 200px;
+        width: 60%;
       }
     }
   }
@@ -248,28 +260,67 @@ main {
 @media (max-width:700px) {
   header {
     justify-content: flex-end;
-    padding: 0 5%;
+    padding: 0;
+    transition: 0.3s;
+
 
     ul {
       display: none;
+
     }
 
-    .toggle {
+    ul.active {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      width: 100vw;
+      background: var(--white);
+      top: 50px;
+      padding: 1rem 2rem;
+      margin: 0;
+      left: 0;
+
+      a {
+        color: var(--verdigris);
+        font-weight: bold;
+
+      }
+
+    }
+
+    .opened,
+    .closed {
+      background-size: cover;
+      background-position: center;
       display: inline-block;
       position: relative;
+      width: 30px;
+      height: 30px;
       transition: 0.3s;
-      padding: 5px;
-      transform: scale(1.4) rotate(90deg);
 
 
       &:hover {
-        transform: scale(1.5) rotate(-90deg);
+        transform: rotate(180deg);
       }
 
-      &:active {
-        transform: scale(1.3) rotate(-90deg);
+    }
 
-      }
+    .opened {
+      background: url(/assets/menu.png) no-repeat;
+    }
+
+    .closed {
+      background: url(/assets/close.png) no-repeat;
+    }
+
+    .toggle-active {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-right: 30px;
+
     }
   }
 

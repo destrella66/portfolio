@@ -4,7 +4,7 @@
     <nav  class="flex center  sp-between">
       <h2 class="logo bold">Davi Estrella</h2>
 
-      <ul id="nav-bar" class="flex sp-between a-center links active" >
+      <ul id="nav-bar" class="flex sp-between a-center links " >
         <li><a href="#about">Sobre</a></li>
         <li><a href="#skills">Habilidades</a></li>
         <li><a href="#projects">Projetos</a></li>
@@ -29,7 +29,9 @@
         </a></li>
       </ul>
     </nav>
-    <div class="toggle" id="toggle" onclick="onToggleMenu()">|||</div>
+    <div class="toggle-active" id="toggle" (click)="onToggleMenu()">
+      <div class="opened" id="toggle-menu"></div>
+    </div>
   </header>
   <main class="main">
     <div class="home-box flex a-center sp-between">
@@ -49,16 +51,11 @@
     </div>
   </main>
 
-<script>
-  navbar = document.getElementById("nav-bar");
-
-  function onToggleMenu(e) {
-    console.log(e)
-  };
-</script>
 </div>
 <section class="waves">
     <img src="/assets/waves.png" alt="">
 </section>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <router-outlet></router-outlet>
 

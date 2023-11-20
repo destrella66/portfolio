@@ -16,8 +16,15 @@ export class HomeComponent {
   //     this.devSkills.
 
   // }
-  navbar = document.getElementById("nav-bar");
+
   onToggleMenu() {
-    console.log(this.navbar)
-  };
+    const navbar = document.getElementById("nav-bar");
+    const toggle = document.getElementById("toggle-menu")
+
+    navbar?.classList.toggle("active");
+
+    toggle?.classList.toggle("closed");
+  }
+
+
 }

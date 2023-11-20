@@ -1,6 +1,10 @@
 .container {
-  main {
+  .main {
     flex-direction: column;
+
+    .about-container {
+      width: 100%;
+    }
 
     h2 {
       align-self: flex-start;
@@ -23,4 +27,23 @@
     width: 400px;
   }
 
+}
+
+@media (max-width:900px) {
+  .main {
+    .about-container {
+      flex-direction: column;
+
+      div {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+          width: 90%;
+        }
+      }
+    }
+  }
 }
