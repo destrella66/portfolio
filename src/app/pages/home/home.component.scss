@@ -250,12 +250,12 @@ main {
     justify-content: flex-end;
     padding: 0 5%;
 
-    nav {
+    ul {
       display: none;
     }
 
     .toggle {
-      display: block;
+      display: inline-block;
       position: relative;
       transition: 0.3s;
       padding: 5px;
