@@ -38,7 +38,7 @@
     .adv,
     .med,
     .beg {
-      background: var(--verdigris);
+      background: linear-gradient(90deg, rgba(28, 37, 65, 1) 0%, rgba(0, 115, 181, 1) 0%, rgba(112, 202, 226, 1) 53%, rgba(175, 255, 249, 1) 100%);
       display: block;
       height: 30px;
       border-radius: 15px;
