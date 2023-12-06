@@ -120,6 +120,7 @@ main {
 
   .btn {
     padding: 10px 40px;
+    z-index: 2;
   }
 
   img {
@@ -136,7 +137,6 @@ main {
 
 .waves {
   display: block;
-  z-index: -100;
 
   img {
     position: absolute;
